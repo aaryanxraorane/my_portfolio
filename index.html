@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aaryan Raorane — PowerShell-inspired cybersecurity portfolio.">
+  <title>Aaryan Raorane | PowerShell Cyber Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="space-bg"></div>
+  <div class="stars"></div>
+  <div class="aurora aurora-one"></div>
+  <div class="aurora aurora-two"></div>
+  <div class="scanlines"></div>
+  <div class="cursor-glow"></div>
+
+  <main class="desktop">
+    <section class="powershell" id="terminal">
+      <div class="ps-titlebar">
+        <div class="ps-icon">›_</div>
+        <span>Windows PowerShell</span>
+        <div class="title-actions"><span>─</span><span>□</span><span>×</span></div>
+      </div>
+
+      <div class="terminal">
+        <header class="terminal-header">
+          <div>
+            <span class="dim">PowerShell 7.x</span>
+            <span class="separator">|</span>
+            <span class="dim">Aaryan Security Environment</span>
+          </div>
+          <button id="minimizeHint" title="Toggle compact mode">⌃</button>
+        </header>
+
+        <div class="terminal-output" id="output">
+          <div class="boot-line">
+            <span class="prompt">PS C:\Users\Aaryan&gt;</span> <span class="cmd">Get-Profile</span>
+          </div>
+          <div class="profile-banner">
+            <div class="profile-ascii">
+<pre>
+    ___   ____  ____  ________  _   __
+   /   | / __ \/ __ \/ ____/ / / / / / /
+  / /| |/ / / / /_/ / / __/ / / / / / /
+ / ___ / /_/ / _, _/ /_/ / /_/ /_/ / /
+/_/  |_\____/_/ |_|\____/\____/____/_/
+</pre>
+            </div>
+            <div class="profile-info">
+              <div class="hello">Hey, I'm <strong>Aaryan Raorane</strong>.</div>
+              <div class="role">Cybersecurity Enthusiast</div>
+              <div class="status"><i></i> SECURITY PROFILE LOADED</div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <div class="sys-panel hardware">
+              <div class="panel-title">Security Focus</div>
+              <div class="stat-row"><span>ROLE</span><b>SOC / CYBERSECURITY</b></div>
+              <div class="stat-row"><span>FOCUS</span><b>SOC · IAM · DFIR</b></div>
+              <div class="stat-row"><span>MODE</span><b>BUILD / INVESTIGATE</b></div>
+              <div class="stat-row"><span>STATUS</span><b class="online">● ONLINE</b></div>
+            </div>
+            <div class="sys-panel session">
+              <div class="panel-title">Session</div>
+              <div class="stat-row"><span>USER</span><b>AARYAN RAORANE</b></div>
+              <div class="stat-row"><span>ENV</span><b>GITHUB PAGES</b></div>
+              <div class="stat-row"><span>STACK</span><b>HTML / CSS / JS</b></div>
+              <div class="stat-row"><span>ACCESS</span><b>PUBLIC</b></div>
+            </div>
+          </div>
+
+          <div class="welcome-copy">
+            <p><span class="prompt">PS C:\Users\Aaryan&gt;</span> <span class="cmd">Get-About</span></p>
+            <p class="response">I learn cybersecurity by getting close to the systems — configuring them, investigating what happens, and building practical security solutions.</p>
+            <p class="response">Current interests: security operations, threat detection, digital forensics, IAM and security automation.</p>
+          </div>
+
+          <div class="command-help">
+            <span class="prompt">PS C:\Users\Aaryan&gt;</span>
+            <span class="cmd">Get-Help</span>
+            <span class="dim">Available commands:</span>
+            <button data-command="projects">Get-Projects</button>
+            <button data-command="events">Get-CyberEvents</button>
+            <button data-command="learning">Get-Learning</button>
+            <button data-command="certifications">Get-Certifications</button>
+            <button data-command="contact">Get-Contact</button>
+          </div>
+        </div>
+
+        <div class="terminal-input-row">
+          <span class="prompt">PS C:\Users\Aaryan&gt;</span>
+          <input id="commandInput" autocomplete="off" spellcheck="false" aria-label="PowerShell portfolio command" placeholder="type a command — try: help, projects, about">
+          <span class="cursor">█</span>
+        </div>
+      </div>
+    </section>
+
+    <nav class="floating-nav">
+      <button data-command="home">HOME</button>
+      <button data-command="about">ABOUT</button>
+      <button data-command="projects">PROJECTS</button>
+      <button data-command="events">EVENTS</button>
+      <button data-command="learning">LEARNING</button>
+      <button data-command="certifications">CERTS</button>
+      <button data-command="contact">CONTACT</button>
+    </nav>
+
+    <div class="hint">Interactive terminal · click a command or type <kbd>help</kbd></div>
+  </main>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-backdrop" data-close></div>
+    <section class="drawer-panel">
+      <button class="drawer-close" data-close>×</button>
+      <div id="drawer-content"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
